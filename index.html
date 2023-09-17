@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pizza Restaurant Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Google Font-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alumni+Sans">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg fixed-top opacity-hover-off" id="myNavbar">
+  <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="font-size: 2rem;">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu" style="font-size: 2rem;">MENU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" style="font-size: 2rem;">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" style="font-size: 2rem;">CONTACT</a>
+        </li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Header with image -->
+<header class="bg-img d-flex flex-column justify-content-between" id="home">
+  <div></div>
+  <div class="d-flex flex-column text-center">
+    <span class="display-1">REALLY<br>GOOD PIZZA</span>
+    <p><a href="#menu" class="btn btn-lg btn-dark hover-btn fs-2">Let me see the menu</a></p>
+  </div>
+  <div class="d-flex justify-content-start">
+    <span class="bg-dark text-white p-3 h2">Open from 10am to 11pm - Call 555-555-5555</span>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="container-fluid bg-black text-white py-5 display-4" id="menu">
+  <div class="container">
+  
+    <h1 class="text-center display-2 mb-5">THE MENU</h1>
+    
+    <div class="text-center border border-dark">
+      <div class="d-flex ">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" class="col-4 tablink p-3 hover-red" id="mainLink">Pizza</a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');" class="col-4 tablink p-3 hover-red">Pasta</a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');" class="col-4 tablink p-3 hover-red">Starter</a>
+      </div>
+    </div>
+
+    <!-- Pizza Menu -->
+    <div id="Pizza" class="container-fluid menu p-4 bg-white">
+      <!-- Margherita -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Margherita</b></h1>
+        <span class="badge bg-dark text-white">$12.50</span>
+      </div>
+      <p class="text-muted">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr class="text-muted">
+    
+      <!-- Formaggio -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Formaggio</b></h1>
+        <span class="badge bg-dark text-white">$15.50</span>
+      </div>
+      <p class="text-muted">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr class="text-muted">
+    
+      <!-- Chicken -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Chicken</b></h1>
+        <span class="badge bg-dark text-white ">$17.00</span>
+      </div>
+      <p class="text-muted">Fresh tomatoes, mozzarella, chicken, onions</p>
+      <hr class="text-muted">
+    
+      <!-- Pineapple'o'clock -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Pineapple'o'clock</b></h1>
+        <span class="badge bg-dark text-white">$16.50</span>
+      </div>
+      <p class="text-muted">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr class="text-muted">
+    
+      <!-- Meat Town -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Meat Town</b> <span class="badge bg-red small-tag">Hot!</span></h1>
+        <span class="badge bg-dark text-white">$20.00</span>
+      </div>
+      <p class="text-muted">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <hr class="text-muted">
+    
+      <!-- Parma -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Parma</b> <span class="badge bg-grey small-tag">New</span></h1>
+        <span class="badge bg-dark text-white">$21.50</span>
+      </div>
+      <p class="text-muted">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+    </div>
+
+    <!-- Pasta Menu -->
+    <div id="Pasta" class="container-fluid menu p-4 bg-white">
+      <!-- Lasagna -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Lasagna </b><span class="badge bg-grey small-tag">Popular</span></h1>
+        <span class="badge bg-dark text-white">$13.50</span>
+      </div>
+      <p class="text-muted">Special sauce, mozzarella, parmesan, ground beef</p>
+      <hr class="text-muted">
+    
+      <!-- Ravioli -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Ravioli</b></h1>
+        <span class="badge bg-dark text-white">$14.50</span>
+      </div>
+      <p class="text-muted">Ravioli filled with cheese</p>
+      <hr class="text-muted">
+    
+      <!-- Spaghetti Classica -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Spaghetti Classica</b></h1>
+        <span class="badge bg-dark text-white ">$11.00</span>
+      </div>
+      <p class="text-muted">Fresh tomatoes, onions, ground beef</p>
+      <hr class="text-muted">
+    
+      <!-- Seafood pasta -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Seafood pasta</b></h1>
+        <span class="badge bg-dark text-white">$25.50</span>
+      </div>
+      <p class="text-muted">Salmon, shrimp, lobster, garlic</p>
+    </div>
+
+    <!-- Starter Menu -->
+    <div id="Starter" class="container-fluid menu p-4 bg-white">
+      <!-- Today's Soup -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Today's Soup </b><span class="badge bg-grey small-tag">Seasonal</span></h1>
+        <span class="badge bg-dark text-white">$5.50</span>
+      </div>
+      <p class="text-muted">Ask the waiter</p>
+      <hr class="text-muted">
+    
+      <!-- Bruschetta -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Bruschetta</b></h1>
+        <span class="badge bg-dark text-white">$8.50</span>
+      </div>
+      <p class="text-muted">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr class="text-muted">
+    
+      <!-- Garlic bread -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Garlic bread</b></h1>
+        <span class="badge bg-dark text-white ">$9.59</span>
+      </div>
+      <p class="text-muted">Grilled ciabatta, garlic butter, onions</p>
+      <hr class="text-muted">
+    
+      <!-- Tomozzarella -->
+      <div class="d-flex justify-content-between align-items-baseline">
+        <h1 class="mb-0 display-3"><b>Tomozzarella</b></h1>
+        <span class="badge bg-dark text-white">$10.50</span>
+      </div>
+      <p class="text-muted">Tomatoes and mozzarella</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="container-fluid py-5 text-white" style="background-color: darkslateblue;" id="about">
+  <div class="container">
+    <h1 class="text-center display-2 mb-3">ABOUT</h1>
+    <h1 class="display-4"><b>Opening Hours</b></h1>
+    <div class="row fs-2">
+      <div class="col-6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="col-6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+
+    <h1 class="display-4"><b>History</b></h1>
+    <p class="fs-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="row">
+      <div class="col-lg-9 col-md-8 col-sm-12">
+        <p class="fs-2"><strong>The Chef?</strong> Mr. Lee himself. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12 text-end">
+        <img src="/assets/chef.jpg" style="width:200px" class="rounded-circle" alt="Chef">
+      </div>
+    </div>
+
+    <p class="fs-2">We are proud of our interiors.</p>
+    <img src="/assets/restaurant.jpg" style="width:100%" class="my-3 img-greyscale" alt="Restaurant">
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">-->
+
+<!-- Contact -->
+<div class="container-fluid bg-secondary text-white py-5 fs-2" id="contact">
+  <div class="container">
+    <h1 class="text-center display-2 mb-5">CONTACT</h1>
+    <p >Find us at some address at some place or call us at 05050515-122330</p>
+    <p>
+      <span class="badge bg-dark">FYI!</span>
+      We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste.
+    </p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="mb-3">
+        <input type="text" class="form-control extra-large" placeholder="Name" required name="Name">
+      </div>
+      <div class="mb-3">
+        <input type="number" class="form-control extra-large" placeholder="How many people" required name="People">
+      </div>
+      <div class="mb-3">
+        <input type="datetime-local" class="form-control extra-large" placeholder="Date and time" required name="date" value="2020-11-16T20:00">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control extra-large" placeholder="Message \ Special requirements" required name="Message">
+      </div>
+      <div class="mb-3">
+        <button type="submit" class="btn btn-light btn-lg btn-block fs-2">SEND MESSAGE</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center bg-dark text-white py-4">
+  <p class="fs-3 mb-0 ">
+    Original Design Inspired by
+    <a href="https://www.w3schools.com/" title="W3 Schools" target="_blank" class="text-success hover-text-green">
+      W3 Schools
+    </a>
+  </p>
+  <p class="fs-3">Built with Bootstrap and CSS by <a href="https://www.twitch.tv/mayanwolfe" title="Mayanwolfe" target="_blank" class="text-success hover-text-green">
+    Mayanwolfe
+  </a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

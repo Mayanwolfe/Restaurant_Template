@@ -1,0 +1,99 @@
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Alumni Sans", sans-serif}
+
+
+/* Custom styles for Navbar */
+.opacity-hover-off {
+  background-color: rgba(0,0,0,0.5) ;
+}
+
+.opacity-hover-off:hover {
+  background-color: rgba(0,0,0,1) ;
+}
+
+.navbar-nav .nav-link {
+  color: white ;
+  font-size: 1.2rem;  
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: white ;
+  color: black ;
+}
+
+/* Hide on small screens */
+@media (max-width: 992px) {
+  #myNavbar {
+    display: none;
+  }
+}
+
+/* Custom styles for Header */
+.bg-img {
+  background-image: url('assets/pizza_splash.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: black;
+}
+
+.btn {
+  min-width: 250px;
+}
+
+/*Custom styles for Menu box*/
+.btn.hover-btn:hover {
+  background-color: lightgrey;
+  color: black;
+  text-decoration: underline;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.hover-red:hover {
+  background-color: rgba(255, 0, 0, 0.461);
+  color: white;
+}
+
+.active-tab {
+  background-color: red;
+  color: white;
+}
+
+.border-dark {
+  border-color: dark-grey;
+}
+
+.badge {
+  padding: .6em .8em;
+}
+
+.small-tag {
+  padding: .3em .3em;
+}
+
+.bg-red {
+  background-color: red;
+  color: white;
+}
+
+.bg-grey {
+  background-color: grey;
+}
+
+.menu h1 {
+  color: black;
+}
+
+/* Custom CSS for greyscale images */
+.img-greyscale {
+  filter: grayscale(100%);
+}
+
+/*XL form boxes*/
+.extra-large {
+  height: 60px;
+  font-size: 1.8rem;
+}
